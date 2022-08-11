@@ -1,0 +1,70 @@
+:root {
+    --font-size: 1;
+}
+
+body {
+    font-size: calc(var(--font-size) * 1rem);
+}
+
+body.dark .font-control {
+    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+    background-color: #1C2833;
+    color: #EAECEE;
+}
+
+.control-fixed {
+    position: fixed;
+    top: 5em;
+    left: .2em;
+}
+
+.font-control-plus {
+    position: absolute;
+    top: 1.5em;
+    left: .2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.font-control-less {
+    position: absolute;
+    top: 4em;
+    left: .2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.font-control-reset {
+    position: absolute;
+    top: 6.5em;
+    left: .2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.font-control {
+    width: 50px;
+    height: 50px;
+    margin-left: .2em;
+    padding: 0.25em;
+    border-radius: 10px;
+    color: #17202A;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all .3s ease-in-out;
+}
+
+.font-control:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
